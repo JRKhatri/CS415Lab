@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jyoti R. Khatri">
+    <title>City Library</title>
+
+    <link href="./resources/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/carousel.css" rel="stylesheet">
+    
+    <!-- <script src="./resources/bootstrap.bundle.min.js"></script> -->
+    <script src="./resources/main.js"></script>
+</head>
+
+<body>
+    <span id="newpage" ></span>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top" style="background-color: rgb(59, 160, 218);">
+            <div class="container-fluid" id="navRow">
+                <a class="navbar-brand" id="navTitle" href="#">City Library(@CS415 Database Project)</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div  class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul  class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <button class="btn-outline-success" id="nav-home">Home</button>
+                        </li>
+                        <li class="nav-item">
+                        <button class="btn-outline-success"  id="nav-about">About Us</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-outline-success"  id="nav-virtual">Virtual Tour</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-outline-success"  id="nav-book">Books</button>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form id="loginForm">
+                        <input class="form-control me-2" placeholder="Username" id="username">
+                        <input class="form-control me-2" type="password" placeholder="Password" id="password">
+                        <button class="btn btn-outline-success" type="submit" id="loginBtn">Login</button>
+                    </form>
+                    <span id="loginErrorMsg"></span>
+                    <button class="btn btn-outline-success" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="welcome">
+        <br>
+       
+        <div class="container">
+            <h1>Welcome to Fairfeild CityLibrary</h1>
+        </div>
+        <hr class="featurette-divider">
+    </main>
+
+    <main id ="homepg">
+        <div class="container">
+            <img src="./resources/library.jpeg" id="lib" alt="library-pic">
+        </div> <br>
+        <div style="color: brown;font-size:x-large;">"PLACE WHERE YOU CAN EXPLORE THE WHOLE UNIVERSE".</div> <br> <br>
+    </main>
+
+
+        <div class='container'id="aboutus">
+
+            <div style="color: brown;font-size:x-large;">City of Fairfeild welcome you to the 'CityLibrary'.</div> <br> <br>
+            <h3 class="aboutus-a">About Library</h5>
+            This Library was build in August 10, 2021. It was developed by the MSD studensts of Maharishi University.
+            This library is located in the center of the Fairfeild city. It have currently more than ten thousands differents books.<br><br>
+            <div id="services">
+                <h6>Our Services:</h6>
+            Opening hour : Monday to Saturday <br>
+            Time: 9 am to 5 pm (1 hr break from 12pm to 1pm) <br>
+            On Sunday the CityLibrary will be closed.<br>
+            <div style="color: blueviolet;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">Thank you!</div>
+            </div> 
+        </div>
+
+
+     <main id="btn-virtual">
+        <div class="container d-flex" >
+            <h4>"Read books become smart get success in life". <br><br> "Lead the kindly Light".</h4>
+            
+            <img src='./resources/books1.jpeg' id='book1' alt="books1-pic" > 
+            <img src='./resources/books2.jpeg' id='book2' alt="books2-pic" > 
+             <img src='./resources/books3.jpeg' id='book1' alt="books1-pic" > 
+            
+        </div>
+         
+     </main>
+    
+
+    <main id="book">
+        <br>
+       
+        <div class="container marketing">
+            <span style="color:brown; font-size: x-large;" id='missInfo'></span> <br>
+            <div id="products" class="row">
+            </div>
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading" id="product-heading">Add a new Book</h2>
+                    <p class="lead">
+                         * Required Field.
+                        <form id="product-form">
+                            <div class="mb-3">
+                                <label for="bNo" class="form-label">BooK No *</label>
+                                <input type="number" class="form-control" id="bNo" ></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="isbn" class="form-label">ISBN</label>
+                                <input type="text" class="form-control" id="isbn">
+
+                            </div>
+                               
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Book Title *</label>
+                                <input type="text" class="form-control" id="title">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="overdue" class="form-label">Overdue Fee *</label>
+                                <input type="number" class="form-control" id="overdue">
+                            </div>
+                            <div class="mb-3">
+                                <label for="publisher" class="form-label">Publisher *</label>
+                                <input type="text" class="form-control" id="publisher"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="datePublished" class="form-label">Date Published *</label>
+                                <input type="date" class="form-control" id="datePublished"></textarea>
+                            </div>
+                            
+                            
+                            <button  class="btn btn-primary" id="submitbook-btn">Submit</button>
+                            
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main id="display-booklist">
+        <div class= 'container'>
+            <button   class="btn btn-primary" id="addbookBtn">Add Book</button>
+            <button   class="btn btn-primary" id="search-btn"> Search Book</button>
+            <br> <br>
+            <h4>BooK List</h4> 
+            <table class='table'>
+                <thread>
+                    <tr>
+                        <th scope='col'>BookNo</th>
+                        <th scope='col'>ISBN</th>
+                        <th scope='col'>Book Title</th>
+                        <th scope='col'>Publisher</th>
+                        <th scope='col'>Date Published</th>
+                        <th scope='col'> Overdue Fee</th>
+                    </tr>
+                </thread>
+                <tbody id='booklist-body'></tbody>
+            </table>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <nav class="navbar navbar-expand-md navbar-light  fixed-bottom" style="background-color: rgb(59, 160, 218);">
+        <div class="container-fluid" id="nav-footer">
+           <h6> @Jyoti R. Khatri ::: CS415 webapp database project</h6> 
+           *August 10, 2021
+    </footer>
+ 
+</body>
+
+</html>

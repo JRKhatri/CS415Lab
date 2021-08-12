@@ -1,0 +1,30 @@
+{
+  "name": "library-project",
+  "version": "1.0.0",
+  "description": "Library database application - requirement for CS415 database project. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRKhatri/CS415Lab.git"
+  },
+  "keywords": [
+    "library",
+    "mongodb",
+    "database",
+    "cs415project"
+  ],
+  "author": "Jyoti R. Khatri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JRKhatri/CS415Lab/issues"
+  },
+  "homepage": "https://github.com/JRKhatri/CS415Lab#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.6"
+  }
+}
