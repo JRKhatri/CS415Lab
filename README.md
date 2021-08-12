@@ -9,5 +9,6 @@
     web file : app.js
     html file : index.html
 
-2. Source code or github link for your project repository
+5. Source code or github link of project repository
+    https://github.com/JRKhatri/CS415Lab
 
